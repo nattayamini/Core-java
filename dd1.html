@@ -1,0 +1,43 @@
+<!doctype htmnl>
+<html>
+<head>
+</head>
+<title>demo</title>
+<body>
+<form name="fm1">
+<label for="v1">yamini</label>
+<input type="text"  name="avalue" id="v1" autofocus><br><br>
+<label for="v2">sindhu</label>
+<input type="text" value="" name="bvalue"id="v2"><br><br>
+<label for="v3">keerthi</label>
+<input type="text" value="" name="cvalue"id="v3"><br><br>
+<input type="button" value="check" onclick="cbl()">
+<input type="reset" value="clear" onclick="cbalank()">
+</form>
+</body>
+<script type="text/javascript">
+function cbl()
+{
+a=parseInt(document.getElementById("v1").value)
+b=parseInt(document.getElementById("v2").value)
+c=parseInt(document.getElementById("v3").value)
+
+if(a>b&&a>c)
+{
+alert("a is big")
+}
+else if(b>c&&b>a)
+{
+alert("b is big")
+}
+else if(c>a&&c>b)
+{
+alert("c is big")
+}
+else
+{
+alert("ntg is big")
+}
+}
+</script>
+</html>
